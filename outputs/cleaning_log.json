@@ -1,0 +1,40 @@
+[
+  {
+    "step": "duplicates",
+    "action": "Dropped exact duplicate rows",
+    "count_or_reason": 35
+  },
+  {
+    "step": "category normalization",
+    "action": "Normalized contract_type",
+    "count_or_reason": 12
+  },
+  {
+    "step": "category normalization",
+    "action": "Normalized payment_method",
+    "count_or_reason": 18
+  },
+  {
+    "step": "missing values",
+    "action": "Median-imputed satisfaction_score",
+    "count_or_reason": "median=7.00; justified by numeric skew risk and low 2.5% missingness"
+  },
+  {
+    "step": "missing values",
+    "action": "Dropped remaining required-field missing rows",
+    "count_or_reason": 0
+  },
+  {
+    "step": "outliers",
+    "action": "Applied domain bounds to age, satisfaction, and spend; retained tenure/calls/late payments",
+    "count_or_reason": "Bounds prevent implausible values while preserving meaningful extremes"
+  },
+  {
+    "step": "target validation",
+    "action": "Validated churned is binary",
+    "count_or_reason": {
+      "0": 3426,
+      "1": 2574
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "contract_churn_chi_square": {
+    "chi2": 257.35327324944785,
+    "p_value": 1.3075152533652677e-56
+  },
+  "tenure_t_test": {
+    "t_statistic": -11.000328216417122,
+    "p_value": 7.3356112424597855e-28
+  }
+}
